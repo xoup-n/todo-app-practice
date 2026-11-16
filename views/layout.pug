@@ -1,0 +1,26 @@
+doctype html
+html(lang="uk")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title
+      block title
+        | To-Do List
+    style.
+      body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; }
+      header { background: #2c5282; color: #fff; padding: 16px 32px; }
+      main { max-width: 640px; margin: 24px auto; background: #fff;
+             padding: 24px 32px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+      footer { text-align: center; color: #718096; font-size: 13px; padding: 16px; }
+      ul { list-style: none; padding: 0; }
+      li { padding: 10px 0; border-bottom: 1px solid #e2e8f0; }
+      .done { text-decoration: line-through; color: #718096; }
+      .badge { background: #38a169; color: #fff; font-size: 12px;
+               padding: 2px 8px; border-radius: 10px; margin-left: 8px; }
+  body
+    header
+      h1 To-Do List
+    main
+      block content
+    footer
+      | ПЗ №5 · Express.js + Pug · МНАУ

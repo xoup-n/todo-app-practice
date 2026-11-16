@@ -1,0 +1,18 @@
+extends layout
+
+block title
+  | #{title}
+
+block content
+  h2= title
+  if tasks.length === 0
+    p Список справ порожній.
+  else
+    ul
+      each task in tasks
+        li
+          if task.completed
+            span.done #{task.id}. #{task.title}
+            span.badge Виконано
+          else
+            span #{task.id}. #{task.title}
